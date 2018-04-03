@@ -3,13 +3,18 @@ import { connect } from 'react-redux';
 import { startLogin } from '../actions/auth';
 
 export const LoginPage = ({ startLogin }) => (
-    <div className="box-layout">
-        <div className="box-layout__box">
-            <h1 className="box-layout__title">Boilerplate</h1>
-            <p>Tag line for app.</p>
-            <button className="button" onClick={startLogin}>Login with Google</button>
-        </div>
-    </div>
+        <header className="header">
+            <div className="header__logo-box">
+                <img src="images/logo-white.png" alt="Logo" className="header__logo"/>
+            </div>
+            <div className="header__text-box">
+                <h1 className="heading-primary">
+                    <span className="heading-primary--main">Outdoors</span>
+                    <span className="heading-primary--sub">is where life happens</span>
+                </h1>
+                <a href="#" className="btn btn--white btn--animated" onClick={startLogin}>Login with Google</a>
+            </div>
+        </header>
 )
 
 const mapDispatchToProps = (dispatch) => ({

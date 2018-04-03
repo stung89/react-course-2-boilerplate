@@ -1,26 +1,21 @@
-* {
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    color: $dark-grey;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: $m-size;
-    line-height: 1.6;
-}
-
-button {
-    cursor: pointer;
-}
-
-button:disabled {
-    cursor: initial;
-}
-
-.is-active {
-    font-weight: 700;
+  font-family: "lato", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  color: #777;
+  padding: 3rem;
+  box-sizing: border-box;
 }
